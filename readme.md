@@ -610,7 +610,6 @@ git commit -m "Resuelve conflicto en esPar: conserva version con operador %"
 git push
 ```
 
-<<<<<<< HEAD
 ---
 
 **P4.** Las dos implementaciones de `esPar` que conflictuaban eran `(n % 2) == 0` y `(n & 1) == 0`. ¿Qué diferencia hay entre ellas?
@@ -624,24 +623,13 @@ c) `(n & 1) == 0` no funciona con números negativos en ningún compilador C est
 d) No hay ninguna diferencia; el compilador genera exactamente el mismo código para ambas
 
 ```
-RESPUESTA_P4=
+RESPUESTA_P4=b
 ```
-=======
-**P2** — Describí con tus palabras qué diferencia hay entre las dos implementaciones de `esPar` que conflictuaban. ¿En qué caso podría importar elegir una sobre la otra?
-
-> R:
-
-```
-PARTE_IV_COMPLETA=
-```
-_(escribí SI cuando el conflicto esté resuelto y pusheado)_
->>>>>>> origin/feature/conflicto-demo
 
 ---
 
 ## Preguntas de reflexión
 
-<<<<<<< HEAD
 **P5.** Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problema principal trae esa práctica?
 
 a) Ninguno; es una práctica válida y más eficiente
@@ -653,7 +641,7 @@ c) Si hay que revertir un cambio puntual es imposible sin deshacer todo lo del d
 d) Git rechaza commits que modifiquen demasiados archivos al mismo tiempo
 
 ```
-RESPUESTA_P5=
+RESPUESTA_P5=c
 ```
 
 ---
@@ -669,7 +657,7 @@ c) `git fetch` solo descarga la branch actual; `git pull` descarga todas las bra
 d) `git pull` siempre pide confirmación antes de modificar archivos locales; `git fetch` no
 
 ```
-RESPUESTA_P6=
+RESPUESTA_P6=b
 ```
 
 ---
@@ -685,27 +673,13 @@ c) Qué problema resuelve o qué funcionalidad agrega, cómo se verificó que fu
 d) El tiempo que tardó en implementarse y el nombre del autor
 
 ```
-RESPUESTA_P7=
+RESPUESTA_P7=c
 ```
-=======
-**P3** — Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problemas puede traer esa práctica? ¿Qué le dirías?
-
-> R:
-
-**P4** — ¿Cuál es la diferencia entre `git fetch` y `git pull`? ¿Cuándo preferirías usar uno sobre el otro?
-
-> R:
-
-**P5** — ¿Qué información debería tener la descripción de un Pull Request para que sea útil para quien lo revisa?
-
-> R:
->>>>>>> origin/feature/conflicto-demo
 
 ---
 
 ## Entrega
 
-<<<<<<< HEAD
 ### Checklist
 
 - [ ] `feature/mi-funcion` mergeada a `main` vía PR
@@ -766,13 +740,3 @@ Para ver los resultados:
 También podés ver un resumen rápido: en la pestaña **Code**, junto a cada commit aparece un ícono ✅ (todos los checks pasaron) o ❌ (alguno falló). Hacé click en ese ícono para ver el detalle.
 
 El puntaje mínimo para aprobar es **60 / 100**.
-=======
-- `feature/mi-funcion` mergeada a `main` vía PR
-- PR del compañero revisado, aprobado y mergeado
-- Commit `wip: experimento roto` y su revert en el historial
-- Conflicto de `esPar` resuelto en `main`
-- Preguntas P1–P5 respondidas
-- Push a `main`
-
-El CI corre automáticamente. En la pestaña **Actions** podés ver qué checks pasan.
->>>>>>> origin/feature/conflicto-demo
